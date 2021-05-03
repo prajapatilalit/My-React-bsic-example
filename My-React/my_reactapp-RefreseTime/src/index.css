@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff56;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  margin-top: 230px;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 5px 0px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 17px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+}
