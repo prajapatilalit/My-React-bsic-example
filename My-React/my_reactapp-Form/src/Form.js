@@ -5,7 +5,7 @@ const Form = () => {
     fName: "",
     lName: "",
     email: "",
-    phoneNumber: "",
+    phone: "",
   });
 
   const InputChange = (e) => {
@@ -28,28 +28,28 @@ const Form = () => {
       //       fName: value,
       //       lName: prevValue.lName,
       //       email: prevValue.email,
-      //       phoneNumber: prevValue.phoneNumber,
+      //       phone: prevValue.phone,
       //     };
       //   } else if (name === "lName") {
       //     return {
       //       fName: prevValue.fName,
       //       lName: value,
       //       email: prevValue.email,
-      //       phoneNumber: prevValue.phoneNumber,
+      //       phone: prevValue.phone,
       //     };
       //   } else if (name === "email") {
       //     return {
       //       fName: prevValue.fName,
       //       lName: prevValue.lName,
       //       email: value,
-      //       phoneNumber: prevValue.phoneNumber,
+      //       phone: prevValue.phone,
       //     };
-      //   } else if (name === "phoneNumber") {
+      //   } else if (name === "phone") {
       //     return {
       //       fName: prevValue.fName,
       //       lName: prevValue.lName,
       //       email: prevValue.email,
-      //       phoneNumber: value,
+      //       phone: value,
       //     };
       //   }
     });
@@ -69,7 +69,7 @@ const Form = () => {
               Hello {fullName.fName} {fullName.lName}
             </h1>
             <p>{fullName.email}</p>
-            <p>{fullName.phoneNumber}</p>
+            <p>{fullName.phone}</p>
             <input
               type="text"
               placeholder="Enter Your First Name"
@@ -94,10 +94,10 @@ const Form = () => {
             />
             <input
               type="text"
-              placeholder="Enter Your Phone Number"
+              placeholder="Enter Your Mobile No."
               onChange={InputChange}
-              name="phoneNumber"
-              value={fullName.phoneNumber}
+              name="phone"
+              value={fullName.phone}
             />
             <button>Submit Me 👍</button>
           </div>
