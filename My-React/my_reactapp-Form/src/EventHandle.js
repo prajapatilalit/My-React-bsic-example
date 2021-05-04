@@ -27,18 +27,18 @@ const EventHandle = () => {
         </h1>
         <input
           type="text"
-          placeholder="Enter Your Name"
+          placeholder="Enter Your First Name 👈"
           onChange={handleChangeFirstName}
           value={firstName}
         />
 
         <input
           type="text"
-          placeholder="Enter Your Last Name"
+          placeholder="Enter Your Last Name 👈"
           onChange={handleChangeLastName}
           value={lastName}
         />
-        <button onClick={onSubmit}>Submit</button>
+        <button onClick={onSubmit}>Submit Me 👍</button>
       </div>
     </>
   );
