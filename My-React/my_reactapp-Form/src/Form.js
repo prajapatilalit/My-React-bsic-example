@@ -16,36 +16,42 @@ const Form = () => {
     const { value, name } = e.target;
 
     setFullName((prevValue) => {
+      //2 line code of using ... spread operator
+      return {
+        ...prevValue,
+        [name]: value,
+      };
+      //without using spread operator
       //   console.log(prevValue);
-      if (name === "fName") {
-        return {
-          fName: value,
-          lName: prevValue.lName,
-          email: prevValue.email,
-          phoneNumber: prevValue.phoneNumber,
-        };
-      } else if (name === "lName") {
-        return {
-          fName: prevValue.fName,
-          lName: value,
-          email: prevValue.email,
-          phoneNumber: prevValue.phoneNumber,
-        };
-      } else if (name === "email") {
-        return {
-          fName: prevValue.fName,
-          lName: prevValue.lName,
-          email: value,
-          phoneNumber: prevValue.phoneNumber,
-        };
-      } else if (name === "phoneNumber") {
-        return {
-          fName: prevValue.fName,
-          lName: prevValue.lName,
-          email: prevValue.email,
-          phoneNumber: value,
-        };
-      }
+      //   if (name === "fName") {
+      //     return {
+      //       fName: value,
+      //       lName: prevValue.lName,
+      //       email: prevValue.email,
+      //       phoneNumber: prevValue.phoneNumber,
+      //     };
+      //   } else if (name === "lName") {
+      //     return {
+      //       fName: prevValue.fName,
+      //       lName: value,
+      //       email: prevValue.email,
+      //       phoneNumber: prevValue.phoneNumber,
+      //     };
+      //   } else if (name === "email") {
+      //     return {
+      //       fName: prevValue.fName,
+      //       lName: prevValue.lName,
+      //       email: value,
+      //       phoneNumber: prevValue.phoneNumber,
+      //     };
+      //   } else if (name === "phoneNumber") {
+      //     return {
+      //       fName: prevValue.fName,
+      //       lName: prevValue.lName,
+      //       email: prevValue.email,
+      //       phoneNumber: value,
+      //     };
+      //   }
     });
   };
 
